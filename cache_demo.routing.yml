@@ -1,0 +1,7 @@
+cache_demo_page:
+  path: 'cache-demo'
+  defaults:
+    _controller: '\Drupal\cache_demo\Controller\CacheDemoController::index'
+    _title: 'Cache demo'
+  requirements:
+    _permission: 'access content'

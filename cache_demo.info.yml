@@ -1,0 +1,4 @@
+name: Cache demo
+description: 'Demonstrates the use of the Cache API in Drupal 8.'
+core: 8.x
+type: module
