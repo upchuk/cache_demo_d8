@@ -1,0 +1,3 @@
+This module demonstrates the impact using the Cache API in Drupal 8 can have on the speed of heavy requests.
+
+To try it out, enable the module and navigate to `cache-demo`. When you navigate there for the first time, the API call gets made and the 100 posts get stored in the cache. You can the reload the page to see how long it takes for those posts to be now retrieved from the cache. Upon doing that, you'll have a link to clear the cache (by a page refresh with the `clear` query string) followed by another link which refreshes the page without the `clear` query string which in turn makes the API call again. And on like that to test the contrast in duration.
