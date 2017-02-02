@@ -105,7 +105,7 @@ class CacheDemoController extends ControllerBase {
     else {
       $guzzle = new Client();
       $response = $guzzle->get('http://jsonplaceholder.typicode.com/posts');
-      $posts = $response->json();
+      $posts = \GuzzleHttp\json_decode($response->getBody());
       $this->cacheBackend->set('cache_demo_posts', $posts, CacheBackendInterface::CACHE_PERMANENT);
       return array(
         'data' => $posts,
